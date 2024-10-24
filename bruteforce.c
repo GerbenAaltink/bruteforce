@@ -29,7 +29,7 @@ int main(int argc, char *argv[]) {
         return 1;
     }
 
-    char * needle = argc == 2 ? argv[1] :  "reataoaor";
+    char * needle = argc == 2 ? argv[1] :  "raetaoaor";
     size_t length = strlen(needle);
     RBENCH(1, {
         unsigned long attempt = gen(str, 0, length, needle, 0);
